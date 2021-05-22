@@ -1,13 +1,17 @@
+// REQUIRED FOR INPUTS, FILE WRITING AND TESTING
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Employee = require("./lib/Employee.js");
-// const Engineer = require("./lib/Engineer.js");
+
+// REQUIRE CLASSES
+const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const Manager = require("./lib/Manager.js");
+
+// REQUIRE generateHTML file
 const generateHTML = require("./src/generateHTML");
 
 //Blank array to store the employee's.
-const employee = [];
+const employees = [];
 
 function getManager() {
   const managerQest = [
@@ -39,7 +43,7 @@ function getManager() {
       data.email,
       data.officeNumber
     );
-    employee.push(manager);
+    employees.push(manager);
     nextEmployee();
   });
 }
@@ -69,7 +73,37 @@ function getIntern() {
   ];
   inquirer.prompt(internQuest).then((data) => {
     const intern = new Intern(data.name, data.id, data.email, data.school);
-    employee.push(intern);
+    employees.push(intern);
+    nextEmployee();
+  });
+}
+
+function getEngineer() {
+  const internQuest = [
+    {
+      type: "input",
+      message: "Input the Engineer's name: ",
+      name: "name",
+    },
+    {
+      type: "input",
+      message: "Input the Engineer's ID: ",
+      name: "id",
+    },
+    {
+      type: "input",
+      message: "Input the Engineer's email: ",
+      name: "email",
+    },
+    {
+      type: "input",
+      message: "Input Engineer's GitHub: ",
+      name: "gitHub",
+    },
+  ];
+  inquirer.prompt(internQuest).then((data) => {
+    const engineer = new Engineer(data.name, data.id, data.email, data.gitHub);
+    employees.push(engineer);
     nextEmployee();
   });
 }
@@ -96,7 +130,8 @@ function nextEmployee() {
 }
 
 function generateCards() {
-  writeToFile("./dist/index.html", generateHTML(employee));
+  console.log(employees);
+  writeToFile("./dist/index.html", generateHTML(employees));
 }
 
 function writeToFile(fileName, data) {
