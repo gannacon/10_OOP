@@ -28,6 +28,13 @@ I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
 ```
 
+## Mock-Up
+
+The following image shows a mock-up of the generated HTML’s appearance and functionality:
+
+![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./images/screenshot.png)
+![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./images/employeeGen.gif)
+
 ## Acceptance Criteria
 
 ```md
@@ -49,6 +56,8 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+---
 
 ## License
 
@@ -76,8 +85,6 @@ Licensed under the [MIT](https://choosealicense.com/licenses/mit/)
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
----
-
 ## Contribute
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
@@ -95,12 +102,6 @@ Use the following command to run the "Jest" test.
 If you have any questions regarding this application please contact me at my GitHub here: (github.com/gannacon)
 
 Or Send me an email: cwgannaway@gmail.com
-
-## Mock-Up
-
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
 
 ## Review
 

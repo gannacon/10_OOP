@@ -61,8 +61,7 @@ function generateCard(employees) {
                 <li class="list-group-item">Employee ID: ${data.id}</li>
                 <a href="mailto:${
                   data.email
-                }"><li class="list-group-item">Email: 
-                ${data.email}</li></a>
+                }"><li class="list-group-item">Email: ${data.email}</li></a>
                 <li class="list-group-item">School: ${data.school}</li>
               </ul>
           </div>
@@ -80,11 +79,8 @@ function generateCard(employees) {
                   data.email
                 }"><li class="list-group-item">Email: 
                 ${data.email}</li></a>
-                <a href="https://github.com/${
-                  data.github
-                }" target="_blank">GitHub: 
-                <li class="list-group-item">
-                ${data.github}</li></a>
+                <a href="https://github.com/${data.github}" target="_blank">
+                <li class="list-group-item">GitHub: ${data.github}</li></a>
               </ul>
           </div>
           </div>`;
