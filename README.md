@@ -103,16 +103,6 @@ If you have any questions regarding this application please contact me at my Git
 
 Or Send me an email: cwgannaway@gmail.com
 
-## Review
-
-You are required to submit the following for review:
-
-- A walkthrough video that demonstrates the functionality of the application and passing tests.
-
-- A sample HTML file generated using your application.
-
-- The URL of the GitHub repository, with a unique name and a readme describing the project.
-
 ---
 
 © 2021 Connor Gannaway. All Rights Reserved.
